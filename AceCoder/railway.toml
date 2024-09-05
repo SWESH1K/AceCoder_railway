@@ -14,3 +14,6 @@ watchPatterns = [
     "railway.toml",
     "Dockerfile",
 ]
+
+[start]
+cmd = "./paracord_runner.sh"
