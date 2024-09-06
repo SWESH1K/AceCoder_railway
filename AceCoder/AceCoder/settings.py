@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-g0#6q4@)k5uyuar1t8sot0pdn4d+o*jc^(h+^@b_ercj4h3)hs
 DEBUG = True
 
 ALLOWED_HOSTS = ['.railway.app', 'https://acecoderbeta.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://acecoderbeta.up.railway.app']
 
 
 # Application definition
