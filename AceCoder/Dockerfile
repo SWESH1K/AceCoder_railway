@@ -1,6 +1,6 @@
 # Set the python version as a build-time argument
 # with Python 3.12 as the default
-ARG PYTHON_VERSION=3.12-slim-bullseye
+ARG PYTHON_VERSION=3.11-slim-bullseye
 FROM python:${PYTHON_VERSION}
 
 # Create a virtual environment
@@ -79,4 +79,5 @@ RUN apt-get remove --purge -y \
 # Run the Django project via the runtime script
 # when the container starts
 # CMD ./paracord_runner.sh
-CMD ["./paracord_runner.sh"]
+# CMD ["./paracord_runner.sh"]
+ENTRYPOINT [ "gunicorn", "AceCoder.wsgi", "-b", "0.0.0.0:8000"]
