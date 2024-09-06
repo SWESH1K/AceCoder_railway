@@ -3,17 +3,7 @@ builder = "DOCKERFILE"
 dockerfilePath = "./Dockerfile"
 watchPatterns = [
     "requirements.txt", 
-    "AceCoder/**",
-    "dashboard/**",
-    "media/**",
-    "resources/**",
-    "static/**",
-    "templates/**",
-    "upsolve/**",
-    "users/**",
+    "AceCoder/**", 
     "railway.toml",
     "Dockerfile",
 ]
-
-[start]
-cmd = "./paracord_runner.sh"
